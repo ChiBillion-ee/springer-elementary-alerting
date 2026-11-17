@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: alerting_demo
+    description: "Demo model for testing Elementary data quality alerts."
+    columns:
+      - name: order_id
+        description: "Order identifier; must be unique and not null."
+        data_tests:
+          - unique
+          - not_null
